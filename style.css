@@ -1,0 +1,80 @@
+.titulo {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 30px;
+}
+
+.botInici {
+    width: 160px; /*Altura do botão.*/
+    height: 40px; /*Largura do botão.*/
+    display: inline-block; /* faz o link se comportar como botão */
+    text-decoration: none; /* remove o sublinhado do texto do botão. */
+    padding: 12px 24px;
+    font-size: 20px; /* tamanho da fonte do texto do botão.*/
+    border-radius: 12px; /* bordas arredondadas */
+    position: relative; /*Movimentar livrimente o elemento (botão nesse caso).*/
+    left: 500px; /*Movimetar para a esqeurda o elemento (botão).*/
+    bottom: 50px; /*Movimetar para cima o elemento (botão).*/
+    background-color: orangered; /*Cor do botão */
+    font-family: agrandir;
+    color: black;
+}
+
+.pag2_Botao_Cidadao {
+      width: 160px; /*Altura do botão.*/
+    height: 40px; /*Largura do botão.*/
+    display: inline-block; /* faz o link se comportar como botão */
+    text-decoration: none; /* remove o sublinhado do texto do botão. */
+    padding: 12px 24px;
+    font-size: 20px; /* tamanho da fonte do texto do botão.*/
+    border-radius: 12px; /* bordas arredondadas */
+    position: relative; /*Movimentar livrimente o elemento (botão nesse caso).*/
+    left: 500px; /*Movimetar para a esqeurda o elemento (botão).*/
+    bottom: 50px; /*Movimetar para cima o elemento (botão).*/
+    background-color: orangered; /*Cor do botão */
+    font-family: agrandir;
+    color: black;
+}
+
+.pag1_Paragr1 {
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+    top: 30px;
+    font-size: 40px;
+    color: #02634f;
+}
+
+.pag1_Paragr2 {
+    position: relative;
+    left: 20px;
+    top: 30px;
+    color: white;
+}
+
+
+.footer {
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center; /* justify-content só funciona em Flexbox (display: flex;) ou Grid. */
+}
+
+.imagem_Pg1 {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    bottom: 160px;
+    left: 450px;
+}
+
+.barraHorizontal {
+    position: absolute;
+    bottom: 350px;
+    top: 20;
+    width: 730px;
+    height: 180px;
+    background: #02634f;
+    z-index: -1; /* Joga para trás do conteúdo (texto, etc.) */
+}
