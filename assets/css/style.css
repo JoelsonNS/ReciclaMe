@@ -14,7 +14,7 @@
     font-size: 20px; /* tamanho da fonte do texto do botão.*/
     border-radius: 12px; /* bordas arredondadas */
     position: relative; /*Movimentar livrimente o elemento (botão nesse caso).*/
-    left: 500px; /*Movimetar para a esqeurda o elemento (botão).*/
+    left: 1250px; /*Movimetar para a esqeurda o elemento (botão).*/
     bottom: 50px; /*Movimetar para cima o elemento (botão).*/
     background-color: orangered; /*Cor do botão */
     font-family: agrandir;
@@ -55,7 +55,7 @@
 
 .footer {
     position: relative;
-    top: 200px;
+    top: 350px;
     display: flex;
     justify-content: center; /* justify-content só funciona em Flexbox (display: flex;) ou Grid. */
 }
@@ -65,13 +65,13 @@
     height: 200px;
     width: 300px;
     bottom: 160px;
-    left: 450px;
+    left: 1150px;
 }
 
 .barraHorizontal {
-    position: absolute;
+    position: relative;
     bottom: 350px;
-    width: 730px;
+    width: 400px;
     height: 180px;
     background: #02634f;
     z-index: -1; /* Joga para trás do conteúdo (texto, etc.) */
