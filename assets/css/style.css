@@ -1,26 +1,26 @@
-body{
-    font-size: none;
+body {
+    font-size: 16px; /* ou 1rem */
+    font-family: 'Agrandir', Arial, sans-serif;
 }
 
 .titulo {
     position: relative; /*Margem flexível*/
-    left: 10px;
-    top: 15px;
+    left: 10px; top: 15px;
     margin-top: 10px;
     font-size: 2.5rem; /*Cresce ou diminui conforme a tela*/
 }
 
 /*Botão Iniciar Processo*/
 .botInici {
-    width: 160px; /*Largura do botão.*/
-    height: 40px; /*Altura do botão.*/
+    width: 10%;
+    height: 40%;
     display: inline-block; /* faz o link se comportar como botão */
     text-decoration: none; /* remove o sublinhado do texto do botão. */
     padding: 12px 24px;
-    font-size: 1.5rem; /* tamanho da fonte do texto do botão.*/
+    font-size: 1.2rem; /* tamanho da fonte do texto do botão.*/
     border-radius: 12px; /* bordas arredondadas */
     background-color: orangered; /*Cor do botão */
-    font-family: agrandir;
+   
     color: rgb(255, 255, 255);
     position: relative;
     bottom: 50px;
@@ -31,6 +31,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.botInici:hover {
+    background-color: #cc3700; /* Tom mais escuro no hover */
 }
 
 .pag2_Botao_Cidadao {
@@ -56,7 +60,8 @@ body{
 
 .pag1_Paragr1 {
     margin-left: 2%;
-    font-size: 4vw;
+    margin-top: 15px;
+    font-size: 4rem;
     color: #02634f;
 }
 
@@ -68,12 +73,15 @@ body{
 }
 
 .imagem_Pg1 {
+    position: relative;
     max-width: 40%;       /* A imagem não ultrapassa o tamanho do container */
     height: auto;          /* Mantém a proporção */
     display: block;        /* Remove pequenos gaps de inline */
     margin-left: auto;     /* Empurra a imagem para o lado direito */
     margin-right: 0;
-    transform: translateY(-200px); /* Sobe a imagem 20px */
+    margin-bottom: 20;
+    margin-top: 20;
+    transform: translateY(-400px); /* Sobe a imagem 20px */
 }
 
 .barraHorizontal {
@@ -94,3 +102,31 @@ footer {
     bottom: 0;                 /* Para fixar no final se usar position: fixed */
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha texto e imagem */
+        align-items: center;
+    }
+
+    .imagem_Pg1 {
+        max-width: 80%;
+        transform: none; /* remove a subida fixa */
+    }
+
+    .botInici {
+        justify-content: center; /* Centraliza os botões */
+        margin-top: 10px;
+    }
+
+    
+
+    .pag1_Paragr1 {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .pag1_Paragr2 {
+        font-size: 3.5vw;
+        text-align: center;
+    }
+}
